@@ -13,7 +13,9 @@ This App Only Works on Mobile Screen
 > **More Info**
 >
 > > Several Pages.
+
 > > Separated Sections.
+
 > > Icons instead of Images.
 
 My [Linkedin][https://www.linkedin.com/in/ahmedbenismael/] to connect.
