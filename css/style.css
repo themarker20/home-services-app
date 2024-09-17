@@ -22,7 +22,7 @@
 
 i,
 i::before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free" !important;
 }
 
 html {
@@ -54,7 +54,7 @@ header {
   top: 0;
   z-index: 55;
   width: 100%;
-  height: 50px;
+  height: 60px;
   box-shadow: 0 0 5px 0px var(--thred-font);
   background-color: var(--body);
 }
@@ -68,38 +68,39 @@ header .box {
 }
 
 header .box .logo {
-  font-size: 7px;
+  font-size: 10px;
   color: var(--second-font);
 }
 
 header .box .notifiction {
   position: relative;
-}
-
-header .box .notifiction img {
-  width: 15px;
+  font-size: 25px;
 }
 
 header .box .notifiction::after {
   content: "1";
   position: absolute;
-  height: 12px;
-  width: 12px;
-  top: -2px;
-  left: 7px;
+  height: 18px;
+  width: 18px;
+  top: 0px;
+  left: 13px;
   border-radius: 50%;
   background-color: rgb(248, 70, 70);
   color: #fff;
-  line-height: 12px;
+  line-height: 18px;
   text-align: center;
-  font-size: 8px;
+  font-size: 15px;
+}
+
+/* space-seprator */
+.space-seprator {
+  padding: 30px 0;
 }
 
 /* Seprated Sections */
 /* Search */
 .search {
   margin: 15px auto;
-  margin-top: 60px;
   height: 30px;
   width: 87%;
   background-color: var(--bg-second);
@@ -170,8 +171,9 @@ header .box .notifiction::after {
 
 /* Budget */
 .budget {
-  margin: 15px auto;
+  margin: 20px auto 20px;
   width: 87%;
+  height: 150px;
   background-color: var(--bg-second);
   padding: 3% 0;
   border-radius: 10px;
@@ -205,6 +207,7 @@ header .box .notifiction::after {
   align-items: center;
   justify-content: flex-start;
   margin: 0 15px;
+  line-height: 45px;
 }
 
 .budget .money .all h3 {
@@ -230,15 +233,16 @@ header .box .notifiction::after {
 
 /* Our Services */
 .our-services {
-  margin: 15px auto;
-  height: 175px;
+  margin: 20px auto 0;
   width: 85%;
+  height: 220px;
   overflow-x: scroll;
   scrollbar-width: none;
 }
 
 .our-services h3 {
   font-size: 14px;
+  margin-bottom: 5px;
   color: var(--main-font);
   font-weight: 600;
 }
@@ -251,8 +255,8 @@ header .box .notifiction::after {
 }
 
 .our-services .services-holder .box {
-  min-width: 115px;
-  height: 135px;
+  min-width: 125px;
+  height: 155px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -263,7 +267,7 @@ header .box .notifiction::after {
   width: 100%;
   height: calc(100% - 25px);
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .our-services .services-holder .box .info {
@@ -285,7 +289,7 @@ header .box .notifiction::after {
 
 /* Footer / Fixed Menu */
 nav {
-  height: 50px;
+  height: 60px;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -297,11 +301,31 @@ nav {
 nav ul {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-evenly;
+  gap: 50px;
   height: 100%;
+  width: 90%;
+  margin: auto;
 }
 
-nav ul li a img {
-  width: 18px;
+nav ul li a {
+  font-size: 25px;
+  color: var(--main-font);
+  position: relative;
+}
+
+nav ul li a.active {
+  color: var(--body);
+}
+
+nav ul li a.active::after {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  left: -14px;
+  top: -11px;
+  background-color: var(--main-font);
+  color: var(--body);
+  z-index: -1;
 }
