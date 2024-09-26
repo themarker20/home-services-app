@@ -1,0 +1,114 @@
+.container-holder {
+  margin-top: 20px;
+}
+
+.form-box {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: flex-start;
+  margin-left: 10%;
+}
+
+.form-box form,
+.form-box form .form-item {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+.form-box form {
+  flex-direction: column;
+  gap: 35px;
+}
+
+.form-box form .form-item {
+  gap: 5px;
+}
+
+.form-box form .form-item label {
+  font-size: 13px;
+}
+
+.form-box form .form-item label i {
+  color: rgb(192, 39, 39);
+}
+
+.form-box form input {
+  border: none;
+  outline: none;
+  width: 80%;
+  border-bottom: 2px solid var(--main-font);
+  padding: 5px 15px;
+  box-shadow: none;
+  transition: all 0.3s;
+}
+
+.file-upload {
+  padding-left: 0;
+}
+
+.form-box form input:focus,
+.form-box form textarea:focus {
+  border-bottom: 2px solid var(--body);
+  box-shadow: 1px -1px 9px 7px #fff, 0px 4px 5px 1px #000;
+}
+
+.form-box form input::placeholder,
+.form-box form textarea::placeholder {
+  color: var(--body);
+  transition: all 0.3s;
+}
+
+.form-box form input:focus::placeholder,
+.form-box form textarea:focus::placeholder {
+  color: var(--main-font);
+}
+
+.form-box form .form-item label {
+  transition: all 0.3s;
+  transform: translateY(30px);
+  opacity: 0.6;
+}
+
+.form-box form .form-item textarea:focus + label,
+.form-box form .form-item input:focus + label {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.form-box form .form-item input[type="file"] {
+  display: none;
+}
+
+label.file-upload {
+  border-bottom: 2px solid var(--main-font);
+  width: 80%;
+  opacity: 1;
+  padding: 7px 0;
+  margin-bottom: 5%;
+}
+
+.form-box form .form-item textarea {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--main-font);
+  color: var(--main-font);
+  width: 80%;
+  resize: none;
+}
+
+.form-box form .form-item input[type="submit"] {
+  width: 50%;
+  background: none;
+  transition: all 0.3s;
+}
+
+.form-box form .form-item input[type="submit"]:hover {
+  border-bottom-color: var(--body);
+  background-color: #354957;
+  color: var(--body);
+  box-shadow: 0 -4px 8px 7px #fff, 0px 4px 2px 1px #000;
+}

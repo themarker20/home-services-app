@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/post-service.css" />
+    <title>Post a Service</title>
+  </head>
+  <body>
+    <!-- Body Container Holder -->
+    <div class="container-holder">
+      <div class="form-box">
+        <form action="">
+          <div class="form-item">
+            <input
+              type="file"
+              id="s-file"
+              placeholder="Upload Yor Image File File"
+            />
+            <label class="file-upload" for="s-file"
+              >Upload Image File <i class="fa-solid fa-star-of-life"></i
+            ></label>
+          </div>
+          <div class="form-item">
+            <input
+              type="text"
+              id="s-name"
+              placeholder="What is your servcie?"
+            />
+            <label for="s-name"
+              >Service Name <i class="fa-solid fa-star-of-life"></i
+            ></label>
+          </div>
+          <div class="form-item">
+            <input type="number" id="s-price" placeholder="Price /Day" />
+            <label for="s-price"
+              >Service Price <i class="fa-solid fa-star-of-life"></i
+            ></label>
+          </div>
+          <div class="form-item">
+            <textarea
+              name=""
+              id="s-msg"
+              placeholder="What is your service about?"
+            ></textarea>
+            <label for="s-msg"
+              >Service Description <i class="fa-solid fa-star-of-life"></i
+            ></label>
+          </div>
+          <div class="form-item">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer / Fixed Menu / Bottom -->
+    <nav>
+      <ul>
+        <li>
+          <a href="./index.html">
+            <i class="fa-solid fa-house-chimney"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-magnifying-glass-arrow-right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="./post-service.html" class="active">
+            <i class="fa-regular fa-square-plus"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-circle-check"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

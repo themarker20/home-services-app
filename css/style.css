@@ -305,30 +305,29 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 50px;
   height: 100%;
-  width: 90%;
+  width: 95%;
+  gap: 20px;
   margin: auto;
 }
 
+nav ul li {
+  height: 100%;
+  width: 25%;
+  line-height: 60px;
+  text-align: center;
+}
+
 nav ul li a {
-  font-size: 25px;
+  font-size: 28px;
   color: var(--main-font);
-  position: relative;
 }
 
 nav ul li a.active {
+  font-size: 28px;
   color: var(--body);
-}
-
-nav ul li a.active::after {
-  content: "";
-  position: absolute;
-  height: 60px;
-  width: 60px;
-  left: -14px;
-  top: -11px;
   background-color: var(--main-font);
-  color: var(--body);
-  z-index: -1;
+}
+nav ul li:has(a.active) {
+  background-color: var(--main-font);
 }
