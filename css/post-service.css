@@ -1,7 +1,8 @@
+/* Fix Container only HERE */
 .container-holder {
-  margin-top: 20px;
+  margin: unset;
+  padding: unset;
 }
-
 .form-box {
   width: 100%;
   height: calc(100vh - 100px);
@@ -29,7 +30,7 @@
 }
 
 .form-box form .form-item label {
-  font-size: 13px;
+  font-size: 10px;
 }
 
 .form-box form .form-item label i {
@@ -39,11 +40,16 @@
 .form-box form input {
   border: none;
   outline: none;
-  width: 80%;
+  width: 90%;
   border-bottom: 2px solid var(--main-font);
   padding: 5px 15px;
   box-shadow: none;
   transition: all 0.3s;
+}
+
+.form-box form input:not(input[type="submit"]),
+.form-box form textarea {
+  padding-left: 15%;
 }
 
 .file-upload {
@@ -85,7 +91,7 @@
 
 label.file-upload {
   border-bottom: 2px solid var(--main-font);
-  width: 80%;
+  width: 90%;
   opacity: 1;
   padding: 7px 0;
   margin-bottom: 5%;
@@ -96,7 +102,7 @@ label.file-upload {
   border: none;
   border-bottom: 2px solid var(--main-font);
   color: var(--main-font);
-  width: 80%;
+  width: 90%;
   resize: none;
 }
 
