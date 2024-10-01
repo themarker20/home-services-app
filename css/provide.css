@@ -1,0 +1,63 @@
+.container-holder {
+  align-items: flex-start;
+  margin-left: 5%;
+}
+
+h2 {
+  color: var(--main-font);
+  font-size: 16px;
+}
+
+.service-box-provide {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 95%;
+  height: 140px;
+  padding: 0 10px;
+  background-color: var(--bg-second);
+  border-radius: 8px;
+}
+
+.service-box-provide .image {
+  flex-basis: 100%;
+}
+
+.service-box-provide .image img {
+  width: 100%;
+  margin: auto;
+}
+
+.service-box-provide .s-info-holder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.service-box-provide .s-info-holder .s-title {
+  font-size: 13px;
+  color: var(--second-font);
+}
+
+.service-box-provide .s-info-holder .s-price {
+  font-size: 11px;
+  color: var(--thred-font);
+}
+
+.service-box-provide .s-info-holder p {
+  font-size: 11px;
+}
+
+.service-box-provide .s-info-holder a {
+  color: var(--add);
+  font-size: 11px;
+  border-bottom: 2px solid var(--thred-font);
+  transition: all 0.3s;
+}
+
+.service-box-provide .s-info-holder a:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}
