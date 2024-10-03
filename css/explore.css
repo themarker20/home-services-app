@@ -1,0 +1,36 @@
+h2 {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.service-box-provide {
+  flex-direction: row-reverse;
+  height: 180px;
+  padding: 0;
+}
+
+.provide-single {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: var(--bg-second);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.providor-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.providor-info h4 {
+  color: var(--main-font);
+  font-size: 14px;
+}
+
+.providor-info img {
+  width: 25px;
+}
