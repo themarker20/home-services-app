@@ -6,6 +6,7 @@ h2 {
   flex-direction: row-reverse;
   height: 180px;
   padding: 0;
+  gap: 20px;
 }
 
 .provide-single {
@@ -16,6 +17,8 @@ h2 {
   background-color: var(--bg-second);
   padding: 10px;
   border-radius: 10px;
+  margin: auto;
+  width: 95%;
 }
 
 .providor-info {
