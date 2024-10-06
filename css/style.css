@@ -64,7 +64,7 @@ header .box {
   margin: 0 25px;
 }
 
-header .box .logo {
+header .box .logo a {
   font-size: 10px;
   color: var(--second-font);
 }
@@ -106,6 +106,7 @@ header .box .notifiction::after {
 /* Seprated Sections */
 /* Search */
 .search {
+  margin-top: 30px;
   height: 30px;
   width: 87%;
   background-color: var(--bg-second);
@@ -263,8 +264,8 @@ header .box .notifiction::after {
 }
 
 .our-services .services-holder .box {
-  min-width: 165px;
-  height: 195px;
+  min-width: 175px;
+  height: 205px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -293,6 +294,28 @@ header .box .notifiction::after {
 .our-services .services-holder .box .info p {
   color: var(--thred-font);
   font-size: 13px;
+}
+
+
+/* link-to-explore */
+.link-to-explore {
+  margin-top: 20px;
+  width: 40%;
+  background-color: var(--bg-second);
+  padding: 10px 5px;
+  text-align: center;
+  line-height: 25px;
+  border-bottom: 3px solid var(--thred-font);
+  transition: all 0.4s;
+}
+
+.link-to-explore a {
+  color: var(--second-font);
+  font-weight: 600;
+}
+
+.link-to-explore:hover {
+  border-bottom-color: var(--main-font);
 }
 
 /* Footer / Fixed Menu */

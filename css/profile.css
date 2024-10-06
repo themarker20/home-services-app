@@ -51,6 +51,7 @@ hr {
   box-shadow: 0 5px 13px -10px var(--add);
   margin-bottom: 15px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .result ul li i,
